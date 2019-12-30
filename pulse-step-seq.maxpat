@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 1068.0, 713.0 ],
+		"rect" : [ 41.0, 84.0, 1468.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,57 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1349.0, 602.0, 82.0, 36.0 ],
+					"text" : "bgcolor 0.94 0.51 0.51"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "change panel bgcolor (1 or 0)",
+					"id" : "obj-82",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1298.0, 522.5, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 1298.0, 562.5, 44.0, 22.0 ],
+					"text" : "sel 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1249.0, 602.0, 80.0, 36.0 ],
+					"text" : "bgcolor 0.87 0.79 0.79"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-80",
 					"maxclass" : "newobj",
@@ -117,12 +168,12 @@
 					"prototypename" : "haptic-step-gain",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[15]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -148,12 +199,12 @@
 					"presentation_rect" : [ 859.746231971684324, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[17]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -179,12 +230,12 @@
 					"presentation_rect" : [ 802.432947104054278, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[10]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -210,12 +261,12 @@
 					"presentation_rect" : [ 745.119662236424574, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[18]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -241,12 +292,12 @@
 					"presentation_rect" : [ 687.806377368794415, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[27]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -272,12 +323,12 @@
 					"presentation_rect" : [ 630.493092501164824, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[19]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -303,12 +354,12 @@
 					"presentation_rect" : [ 573.179807633535233, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[20]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -334,12 +385,12 @@
 					"presentation_rect" : [ 515.866522765905074, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[28]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -365,12 +416,12 @@
 					"presentation_rect" : [ 458.55323789827537, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[11]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -396,12 +447,12 @@
 					"presentation_rect" : [ 409.573865073007312, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[16]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -427,12 +478,12 @@
 					"presentation_rect" : [ 352.260580205377153, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[21]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -458,12 +509,12 @@
 					"presentation_rect" : [ 294.947295337747391, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[22]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -489,12 +540,12 @@
 					"presentation_rect" : [ 237.634010470117659, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[23]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -520,12 +571,12 @@
 					"presentation_rect" : [ 180.320725602487897, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[24]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -551,12 +602,12 @@
 					"presentation_rect" : [ 123.007440734858037, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[25]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -582,12 +633,12 @@
 					"presentation_rect" : [ 65.694155867228289, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[26]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -613,12 +664,12 @@
 					"presentation_rect" : [ 8.380870999598528, 208.0, 46.0, 109.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "step gain[29]",
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "gain"
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -2650,7 +2701,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 916.940246000000116, 657.0, 128.0, 128.0 ],
+					"patching_rect" : [ 1241.771300999999994, 674.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 1014.0, 351.0 ],
 					"proportion" : 0.5
@@ -3663,6 +3714,41 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"source" : [ "obj-84", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"source" : [ "obj-84", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-88", 0 ]
 				}
@@ -3684,23 +3770,23 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-191" : [ "step gain[11]", "gain", 0 ],
+			"obj-192" : [ "step gain[15]", "gain", 0 ],
 			"obj-184" : [ "step gain[17]", "gain", 0 ],
-			"obj-178" : [ "step gain[24]", "gain", 0 ],
-			"obj-190" : [ "step gain[28]", "gain", 0 ],
+			"obj-185" : [ "step gain[10]", "gain", 0 ],
+			"obj-186" : [ "step gain[18]", "gain", 0 ],
 			"obj-187" : [ "step gain[27]", "gain", 0 ],
+			"obj-188" : [ "step gain[19]", "gain", 0 ],
+			"obj-189" : [ "step gain[20]", "gain", 0 ],
+			"obj-190" : [ "step gain[28]", "gain", 0 ],
+			"obj-191" : [ "step gain[11]", "gain", 0 ],
+			"obj-180" : [ "step gain[16]", "gain", 0 ],
 			"obj-181" : [ "step gain[21]", "gain", 0 ],
 			"obj-182" : [ "step gain[22]", "gain", 0 ],
-			"obj-189" : [ "step gain[20]", "gain", 0 ],
-			"obj-185" : [ "step gain[10]", "gain", 0 ],
-			"obj-177" : [ "step gain[26]", "gain", 0 ],
-			"obj-192" : [ "step gain[15]", "gain", 0 ],
-			"obj-180" : [ "step gain[16]", "gain", 0 ],
-			"obj-179" : [ "step gain[25]", "gain", 0 ],
-			"obj-188" : [ "step gain[19]", "gain", 0 ],
-			"obj-173" : [ "step gain[29]", "gain", 0 ],
 			"obj-183" : [ "step gain[23]", "gain", 0 ],
-			"obj-186" : [ "step gain[18]", "gain", 0 ],
+			"obj-178" : [ "step gain[24]", "gain", 0 ],
+			"obj-179" : [ "step gain[25]", "gain", 0 ],
+			"obj-177" : [ "step gain[26]", "gain", 0 ],
+			"obj-173" : [ "step gain[29]", "gain", 0 ],
 			"parameterbanks" : 			{
 
 			}

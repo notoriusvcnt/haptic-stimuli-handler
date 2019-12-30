@@ -13,7 +13,6 @@ More details soon.
 
 ## Cosas pendientes
 
-* Cambiar color de fondo de sección cuando se está usando
 * Tratar de acceder a carpetas usando bpatcher
 * Usar el objeto live.gain~ para que muestre el nivel actual del paso.
 
