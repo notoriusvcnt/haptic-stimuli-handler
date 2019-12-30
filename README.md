@@ -20,6 +20,14 @@ More details soon.
 
 ## Changelog
 
+### 0.1.0.3
+
+* Arreglado bug de sequenciador que hacía que no funcionara correctamente.
+
+### 0.1.0.2
+
+* Se ocultó tab principal de haptic-stimuli-handler patch
+
 ### 0.1.0.1
 
 * Añadido cambio de color al módulo activo
@@ -29,3 +37,11 @@ More details soon.
 
 * Añadidos 3 modulos por canal: step sequencer, wave generator, audio file player
 * Sección mixer con niveles maestros por cada canal + vca master todos los canales
+
+
+
+## Bugs conocidos
+
+* Al cambiar el nivel de un paso mientras el sequenciador está abierto, el paso actual se cambia al nivel del paso que estamos modificando instantáneamente, luego al volver a pasar por ese paso vuelve a su nivel correspondiente.
+
+  
