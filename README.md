@@ -20,6 +20,11 @@ More details soon.
 
 ## Changelog
 
+### 0.1.0.1
+
+* Añadido cambio de color al módulo activo
+* Work in progress de acceso a carpetas para el objeto bpatcher. Revisar Issues para más detalle.
+
 ### v0.1
 
 * Añadidos 3 modulos por canal: step sequencer, wave generator, audio file player
