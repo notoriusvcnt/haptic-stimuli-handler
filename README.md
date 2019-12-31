@@ -20,6 +20,11 @@ More details soon.
 
 ## Changelog
 
+### 0.1.1
+
+* Se unificó sección de tempo y de secuenciador en una sola
+* Se arreglaron bugs menores en secuenciador 
+
 ### 0.1.0.3
 
 * Arreglado bug de sequenciador que hacía que no funcionara correctamente.
