@@ -7,18 +7,20 @@ More details soon.
 
 * Abrir el archivo 'haptic-stimuli-handler.maxpat'.
 
-
-
 (AÚN NO TERMINADO)
 
-## Cosas pendientes
+## Bugs conocidos
 
-* Tratar de acceder a carpetas usando bpatcher
-* Usar el objeto live.gain~ para que muestre el nivel actual del paso.
-
-
+* Al cambiar el nivel de un paso mientras el sequenciador está abierto, el paso actual se cambia al nivel del paso que estamos modificando instantáneamente, luego al volver a pasar por ese paso vuelve a su nivel correspondiente.
+* Con respecto al reloj externo, pueden ocurrir problemas de sincronización si es que se cambia de reloj interno a externo sin apagar previamente. Por el momento, lo mejor es apagar el reloj y cambiar a interno o externo según sea el caso.
 
 ## Changelog
+
+### 0.1.2
+
+* Se añade opción de controlar secuenciador de cada canal con un reloj externo
+* Se añade reloj externo contectado a todos los canales a tab 'MAIN'. (revisar bugs conocidos)
+* Se modifica levemente el README
 
 ### 0.1.1
 
@@ -43,10 +45,8 @@ More details soon.
 * Añadidos 3 modulos por canal: step sequencer, wave generator, audio file player
 * Sección mixer con niveles maestros por cada canal + vca master todos los canales
 
+## Características Pendientes
 
+* Tratar de acceder a carpetas usando bpatcher
+* Usar el objeto live.gain~ para que muestre el nivel actual del paso.
 
-## Bugs conocidos
-
-* Al cambiar el nivel de un paso mientras el sequenciador está abierto, el paso actual se cambia al nivel del paso que estamos modificando instantáneamente, luego al volver a pasar por ese paso vuelve a su nivel correspondiente.
-
-  
