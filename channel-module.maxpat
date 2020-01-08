@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 1468.0, 713.0 ],
+		"rect" : [ 27.0, 84.0, 1068.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "on/off external clock source",
+					"id" : "obj-7",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1993.0, 205.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "external clock source",
+					"id" : "obj-5",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1939.0, 205.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
@@ -426,12 +452,12 @@
 					"presentation_rect" : [ 780.976693638046527, 87.333333969116211, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[2]",
-							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[2]",
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -898,7 +924,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "pulse-step-seq.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "int" ],
@@ -1118,8 +1144,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 2 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -1132,42 +1172,46 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-4::obj-184" : [ "step gain[17]", "gain", 0 ],
+			"obj-4::obj-185" : [ "step gain[10]", "gain", 0 ],
 			"obj-4::obj-186" : [ "step gain[18]", "gain", 0 ],
+			"obj-4::obj-178" : [ "step gain[14]", "gain", 0 ],
 			"obj-4::obj-188" : [ "step gain[19]", "gain", 0 ],
-			"obj-4::obj-34" : [ "tempo", "tempo", 0 ],
 			"obj-4::obj-189" : [ "step gain[20]", "gain", 0 ],
-			"obj-4::obj-187" : [ "step gain[11]", "gain", 0 ],
-			"obj-4::obj-177" : [ "step gain[26]", "gain", 0 ],
-			"obj-4::obj-191" : [ "step gain[21]", "gain", 0 ],
-			"obj-4::obj-173" : [ "step gain", "gain", 0 ],
 			"obj-15" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-9::obj-15" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-4::obj-187" : [ "step gain[11]", "gain", 0 ],
+			"obj-12::obj-15" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-4::obj-191" : [ "step gain[21]", "gain", 0 ],
 			"obj-4::obj-180" : [ "step gain[22]", "gain", 0 ],
 			"obj-4::obj-182" : [ "step gain[23]", "gain", 0 ],
-			"obj-9::obj-15" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-4::obj-190" : [ "step gain[12]", "gain", 0 ],
-			"obj-12::obj-15" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-4::obj-185" : [ "step gain[10]", "gain", 0 ],
-			"obj-4::obj-179" : [ "step gain[25]", "gain", 0 ],
-			"obj-4::obj-181" : [ "step gain[13]", "gain", 0 ],
-			"obj-4::obj-192" : [ "step gain[15]", "gain", 0 ],
-			"obj-4::obj-184" : [ "step gain[17]", "gain", 0 ],
-			"obj-4::obj-178" : [ "step gain[14]", "gain", 0 ],
 			"obj-4::obj-183" : [ "step gain[24]", "gain", 0 ],
+			"obj-4::obj-179" : [ "step gain[25]", "gain", 0 ],
+			"obj-4::obj-177" : [ "step gain[26]", "gain", 0 ],
+			"obj-4::obj-173" : [ "step gain", "gain", 0 ],
+			"obj-4::obj-34" : [ "tempo", "tempo", 0 ],
+			"obj-4::obj-190" : [ "step gain[12]", "gain", 0 ],
+			"obj-4::obj-192" : [ "step gain[15]", "gain", 0 ],
+			"obj-4::obj-181" : [ "step gain[13]", "gain", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-4::obj-178" : 				{
+					"parameter_longname" : "step gain[14]"
+				}
+,
 				"obj-4::obj-187" : 				{
 					"parameter_longname" : "step gain[11]"
 				}
 ,
-				"obj-4::obj-191" : 				{
-					"parameter_longname" : "step gain[21]"
+				"obj-12::obj-15" : 				{
+					"parameter_longname" : "live.gain~[1]"
 				}
 ,
-				"obj-4::obj-173" : 				{
-					"parameter_longname" : "step gain"
+				"obj-4::obj-191" : 				{
+					"parameter_longname" : "step gain[21]"
 				}
 ,
 				"obj-4::obj-180" : 				{
@@ -1178,24 +1222,20 @@
 					"parameter_longname" : "step gain[23]"
 				}
 ,
+				"obj-4::obj-183" : 				{
+					"parameter_longname" : "step gain[24]"
+				}
+,
+				"obj-4::obj-173" : 				{
+					"parameter_longname" : "step gain"
+				}
+,
 				"obj-4::obj-190" : 				{
 					"parameter_longname" : "step gain[12]"
 				}
 ,
-				"obj-12::obj-15" : 				{
-					"parameter_longname" : "live.gain~[1]"
-				}
-,
 				"obj-4::obj-181" : 				{
 					"parameter_longname" : "step gain[13]"
-				}
-,
-				"obj-4::obj-178" : 				{
-					"parameter_longname" : "step gain[14]"
-				}
-,
-				"obj-4::obj-183" : 				{
-					"parameter_longname" : "step gain[24]"
 				}
 
 			}
