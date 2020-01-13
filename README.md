@@ -17,6 +17,11 @@ More details soon.
 
 ## Changelog
 
+### 0.1.3.1
+
+* Corregido botón on/off
+* Corregido bug preset
+
 ### 0.1.3
 
 * Se añade módulo externo '4-channel-step-sequencer'. Revisar archivo '4channel-seq.maxpat'.
