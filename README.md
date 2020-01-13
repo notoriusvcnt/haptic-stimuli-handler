@@ -19,7 +19,7 @@ More details soon.
 
 ### 0.1.3
 
-* Se añade módulo externo '4-channel-step-sequencer'. Revisar carpeta con el mismo nombre.
+* Se añade módulo externo '4-channel-step-sequencer'. Revisar archivo '4channel-seq.maxpat'.
 
 ### 0.1.2
 
