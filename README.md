@@ -6,6 +6,7 @@ More details soon.
 ## Cómo usar
 
 * Abrir el archivo 'haptic-stimuli-handler.maxpat'.
+* Módulo de secuenciador de 4 canales está en carpeta '4channel-step-sequencer'. Abrir archivo maxpat con el mismo nombre.
 
 (AÚN NO TERMINADO)
 
@@ -15,6 +16,10 @@ More details soon.
 * Con respecto al reloj externo, pueden ocurrir problemas de sincronización si es que se cambia de reloj interno a externo sin apagar previamente. Por el momento, lo mejor es apagar el reloj y cambiar a interno o externo según sea el caso.
 
 ## Changelog
+
+### 0.1.3
+
+* Se añade módulo externo '4-channel-step-sequencer'. Revisar carpeta con el mismo nombre.
 
 ### 0.1.2
 
