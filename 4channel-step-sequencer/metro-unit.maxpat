@@ -52,17 +52,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "preset",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 668.0, 219.0, 100.0, 40.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -400,6 +389,7 @@
 					"presentation_rect" : [ 37.00977846534883, 23.0, 61.0, 54.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 240 ],
 							"parameter_shortname" : "tempo",
 							"parameter_enum" : [ "0", "300" ],
 							"parameter_type" : 0,
@@ -407,8 +397,7 @@
 							"parameter_units" : "bpm",
 							"parameter_mmin" : 20.0,
 							"parameter_longname" : "tempo",
-							"parameter_mmax" : 300.0,
-							"parameter_initial" : [ 240 ]
+							"parameter_mmax" : 300.0
 						}
 
 					}
@@ -874,6 +863,19 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 7.6666659116745, 4.66666579246521, 507.0, 145.33333420753479 ],
 					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"patching_rect" : [ 668.0, 219.0, 100.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 415.980443665348844, 48.0, 80.0, 29.0 ]
 				}
 
 			}
